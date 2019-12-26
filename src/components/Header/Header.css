@@ -1,0 +1,48 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+  padding: 0px 20px;
+}
+
+.wrapper {
+display: flex;
+width: 100%;
+}
+
+.logo {
+  max-height: 20px;
+  width: auto;
+}
+
+.profile-picture {
+ width: 20px;
+ border-radius: 50%;
+}
+
+.lists {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo,
+.lists li {
+padding: 20px 10px;
+height: calc(100% - 40px);
+}
+.lists li svg {
+  height: 20px;
+}
+
+.lists li:hover {
+border-bottom: 1px solid black;
+}
+
+
+
+
+
