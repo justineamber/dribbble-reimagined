@@ -6,20 +6,23 @@ function Header() {
   return (
     <header className="header">
       <div className="wrapper">
-        <img className="logo" src="/dribbble-logo.png" alt="dribble logo"/>
+        <a className="logo" href="/">
+        <img src="/dribbble-logo.png" alt="dribble logo" className="dribbblelogo"></img>
+        </a>
         <ul className="lists">
-          <li>Shots</li>
-          <li>Designers</li>
-          <li>Meetups</li>
-          <li>Jobs</li>
-        <li><MoreHorizontal /></li>
+          <li><a href="#">Shots</a></li>
+          <li><a href="#">Designers</a></li>
+          <li><a href="#">Meetups</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#"><MoreHorizontal/></a></li>
         </ul>
-      </div>
+        </div>
       <ul className="lists">
-        <li><img className="profile-picture" src="/justine.png" alt="Justine Hill profile"/></li>
-        <li><Mail /></li>
-        <li><Activity /></li>
-        <li><UploadCloud /></li>
+          <li><a className="profilepicture" href="/">
+          <img src="/justine.png" alt="Justine Hill profile" className="profile-picture"/></a></li>
+          <li><a href="#"><Mail /></a></li>
+          <li><a href="#"><Activity /></a></li>
+          <li><a href="#"><UploadCloud /></a></li>
       </ul>
     </header>
   );
