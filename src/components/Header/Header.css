@@ -12,12 +12,12 @@
   width: 100%;
 }
 .logo {
-  width: 110px;
   display: block;
   margin: 0 auto 16px auto;
 }
 .dribbblelogo {
   width: 100%;
+  margin-right: 12px;
 }
 .lists {
   list-style-type: none;
@@ -67,6 +67,8 @@ Media Queries
   .lists {
    flex-direction: row;
    justify-content: flex-start;
+   font-size: 12px;
+   align-items: center;
   }
   .lists a {
     border: 0;
