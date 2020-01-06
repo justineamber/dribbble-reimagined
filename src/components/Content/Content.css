@@ -1,0 +1,43 @@
+
+
+.card-wrapper {
+  width: 100%;
+  background-color: fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 20rem;
+}
+.dribbblecard {
+ width: 100%
+}
+.card-info-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.info-left {
+    display: flex;
+    align-items: center;
+}
+.type-marker {
+  list-style-type: none;
+}
+
+.teamicon {
+    width: 25px;
+    border-radius: 50%;
+}
+
+.info-right {
+  display: flex;
+  height: 92px;
+}
+.engagement-metrics {
+  list-style-type: none;
+  display: flex;
+    width: 100px;
+    height: 70px;
+    margin: auto;
+}
+.engagement-metrics a {
+justify-content: space-evenly;
+}

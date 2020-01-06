@@ -7,7 +7,7 @@ function Header() {
     <header className="header">
       <div className="wrapper">
         <a className="logo" href="/">
-        <img src="/dribbble-logo.png" alt="dribble logo" className="dribbblelogo"></img>
+        <img src="/dribbble-logo.png" alt="dribbble logo" className="dribbblelogo"></img>
         </a>
         <ul className="lists">
           <li><a href="#">Shots</a></li>
