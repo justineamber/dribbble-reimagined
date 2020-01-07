@@ -4,28 +4,130 @@ import './Content.css';
 
 function Content() {
   return (
-<div className="card-wrapper">
-<img src="/rick-morty.png" alt="dribbble card" className="dribbblecard">
-</img>
-<div className="card-info-wrapper">
-  <div className="info-left">
-    <img src="/icon-team.png" alt="designer-team-icon" className="teamicon">
-    </img>
-    <span className="designer-name">Pierre Kleinhouse</span>
-    <sup>PRO</sup>
-  </div>
-  <div className="info-right">
-      <ul className="engagement-metrics">
-      <li><a href="#"><Eye /></a>
-      <span>3096</span></li>
-      <li><a href="#"><MessageCircle /></a>
-      <span>18</span></li>
-      <li><a href="#"><Heart /></a>
-      <span>540</span></li>
-      </ul>
-    </div>
-  </div>
-</div>
+  <main>
+    <section className="cards">
+      <div className="card">
+        <div className="card_image-container">
+          <img src="https://images.unsplash.com/photo-1520190282873-afe1285c9a2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80" alt="cabin ontop of mountain"
+          />
+        </div>
+        <div className="card_content">
+          <div className="card_info">
+            <img src="/afterglow-logo.png" alt="designer logo" className="designer-logo"></img>
+            <p className="text--medium">Outsourced<sup className="company-info">PRO</sup></p>
+                <p className="card_engagement text--medium"><a href="#"><Eye /></a>4910</p>
+                <p className="card_engagement text--medium"><a href="#"><MessageCircle /></a>27</p>
+                <p className="card_engagement text--medium"><a href="#"><Heart /></a>543</p>
+          </div>
+        </div>
+      </div>
+      <div className="card">
+        <div className="card_image-container">
+          <img src="https://images.unsplash.com/photo-1520190282873-afe1285c9a2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80" alt="cabin ontop of mountain"
+          />
+        </div>
+        <div className="card_content">
+          <div className="card_info">
+            <img src="/afterglow-logo.png" alt="designer logo" className="designer-logo"></img>
+            <p className="text--medium">Outsourced<sup className="company-info">PRO</sup></p>
+                <p className="card_engagement text--medium"><a href="#"><Eye /></a>4910</p>
+                <p className="card_engagement text--medium"><a href="#"><MessageCircle /></a>27</p>
+                <p className="card_engagement text--medium"><a href="#"><Heart /></a>543</p>
+          </div>
+        </div>
+      </div>
+      <div className="card">
+        <div className="card_image-container">
+          <img src="https://images.unsplash.com/photo-1520190282873-afe1285c9a2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80" alt="cabin ontop of mountain"
+          />
+        </div>
+        <div className="card_content">
+          <div className="card_info">
+            <img src="/afterglow-logo.png" alt="designer logo" className="designer-logo"></img>
+            <p className="text--medium">Outsourced<sup className="company-info">PRO</sup></p>
+                <p className="card_engagement text--medium"><a href="#"><Eye /></a>4910</p>
+                <p className="card_engagement text--medium"><a href="#"><MessageCircle /></a>27</p>
+                <p className="card_engagement text--medium"><a href="#"><Heart /></a>543</p>
+          </div>
+        </div>
+      </div>
+      <div className="card">
+        <div className="card_image-container">
+          <img src="https://images.unsplash.com/photo-1520190282873-afe1285c9a2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80" alt="cabin ontop of mountain"
+          />
+        </div>
+        <div className="card_content">
+          <div className="card_info">
+            <img src="/afterglow-logo.png" alt="designer logo" className="designer-logo"></img>
+            <p className="text--medium">Outsourced<sup className="company-info">PRO</sup></p>
+                <p className="card_engagement text--medium"><a href="#"><Eye /></a>4910</p>
+                <p className="card_engagement text--medium"><a href="#"><MessageCircle /></a>27</p>
+                <p className="card_engagement text--medium"><a href="#"><Heart /></a>543</p>
+          </div>
+        </div>
+      </div>
+      <div className="card">
+        <div className="card_image-container">
+          <img src="https://images.unsplash.com/photo-1520190282873-afe1285c9a2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80" alt="cabin ontop of mountain"
+          />
+        </div>
+        <div className="card_content">
+          <div className="card_info">
+            <img src="/afterglow-logo.png" alt="designer logo" className="designer-logo"></img>
+            <p className="text--medium">Outsourced<sup className="company-info">PRO</sup></p>
+                <p className="card_engagement text--medium"><a href="#"><Eye /></a>4910</p>
+                <p className="card_engagement text--medium"><a href="#"><MessageCircle /></a>27</p>
+                <p className="card_engagement text--medium"><a href="#"><Heart /></a>543</p>
+          </div>
+        </div>
+      </div>
+      <div className="card">
+        <div className="card_image-container">
+          <img src="https://images.unsplash.com/photo-1520190282873-afe1285c9a2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80" alt="cabin ontop of mountain"
+          />
+        </div>
+        <div className="card_content">
+          <div className="card_info">
+            <img src="/afterglow-logo.png" alt="designer logo" className="designer-logo"></img>
+            <p className="text--medium">Outsourced<sup className="company-info">PRO</sup></p>
+                <p className="card_engagement text--medium"><a href="#"><Eye /></a>4910</p>
+                <p className="card_engagement text--medium"><a href="#"><MessageCircle /></a>27</p>
+                <p className="card_engagement text--medium"><a href="#"><Heart /></a>543</p>
+          </div>
+        </div>
+      </div>
+      <div className="card">
+        <div className="card_image-container">
+          <img src="https://images.unsplash.com/photo-1520190282873-afe1285c9a2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80" alt="cabin ontop of mountain"
+          />
+        </div>
+        <div className="card_content">
+          <div className="card_info">
+            <img src="/afterglow-logo.png" alt="designer logo" className="designer-logo"></img>
+            <p className="text--medium">Outsourced<sup className="company-info">PRO</sup></p>
+                <p className="card_engagement text--medium"><a href="#"><Eye /></a>4910</p>
+                <p className="card_engagement text--medium"><a href="#"><MessageCircle /></a>27</p>
+                <p className="card_engagement text--medium"><a href="#"><Heart /></a>543</p>
+          </div>
+        </div>
+      </div>
+      <div className="card">
+        <div className="card_image-container">
+          <img src="https://images.unsplash.com/photo-1520190282873-afe1285c9a2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80" alt="cabin ontop of mountain"
+          />
+        </div>
+        <div className="card_content">
+          <div className="card_info">
+            <img src="/afterglow-logo.png" alt="designer logo" className="designer-logo"></img>
+            <p className="text--medium">Outsourced<sup className="company-info">PRO</sup></p>
+                <p className="card_engagement text--medium"><a href="#"><Eye /></a>4910</p>
+                <p className="card_engagement text--medium"><a href="#"><MessageCircle /></a>27</p>
+                <p className="card_engagement text--medium"><a href="#"><Heart /></a>543</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   );
 }
 
