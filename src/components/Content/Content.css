@@ -75,7 +75,12 @@ main {
 }
 .card_engagement {
 margin-left: auto;
+text-align: justify;
+width: 15px;
+display: block;
+margin: 0 auto;
 }
+
 @media only screen and (max-width: 1000px) {
   .card {
     grid-column-end: span 6;
