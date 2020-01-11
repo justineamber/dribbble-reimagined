@@ -70,7 +70,6 @@ main {
   transition: .5s ease;
 }
 .save-button {
-display:inline-block;
 padding:0.5em 3em;
 background-color: #fff;
 border:0.16em solid rgb(173, 172, 172);
