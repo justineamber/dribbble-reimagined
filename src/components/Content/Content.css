@@ -4,16 +4,16 @@
   margin: 0;
 }
 body {
-  background-color: fff;
+  background-color: #fff;
 }
 main {
   display: grid;
   grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
   grid-gap: 40px;
-  padding: 60px 0 ;
+  padding: 30px 0 ;
 }
 .text--medium {
-  font-family:'Open-Sans', sans-serif;
+  font-family: sans-serif;
   font-size: 12px;
   line-height: 20px;
   font-weight: 400;
@@ -32,6 +32,8 @@ main {
   flex-direction: column;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
 .card:hover {
   transform: translateY(-7px);
@@ -48,6 +50,61 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.card_image-container:hover .overlay {
+  height: 100%;
+}
+.overlay {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.save-button {
+display:inline-block;
+padding:0.5em 3em;
+background-color: #fff;
+border:0.16em solid rgb(173, 172, 172);
+margin:0;
+box-sizing: border-box;
+text-decoration:none;
+text-transform:uppercase;
+font-family:'Roboto',sans-serif;
+font-weight:400;
+color:rgb(134, 133, 133);
+text-align:center;
+transition: all 0.15s;
+max-height: 2.5rem;
+margin-top: 3rem;
+}
+a.save-button:hover{
+color:rgb(63, 62, 62);
+border-color: rgb(65, 64, 64);
+}
+a.save-button:active{
+color: rgb(65, 62, 62);
+border-color: rgb(65, 64, 64);
+}
+.text {
+  white-space: nowrap;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  position: absolute;
+  height: 102px;
 }
 .card_content {
   padding: 10px;
@@ -74,11 +131,10 @@ main {
   border-radius: 50%;
 }
 .card_engagement {
-margin-left: auto;
-text-align: justify;
-width: 15px;
-display: block;
-margin: 0 auto;
+    margin-left: auto;
+    width: 27px;
+    justify-content: center;
+    text-align: center;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -109,3 +165,4 @@ margin: 0 auto;
     grid-column-end: span 6;
   }
 }
+
