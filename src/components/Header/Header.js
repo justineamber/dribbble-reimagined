@@ -7,7 +7,7 @@ function Header() {
     <header className="header">
       <div className="wrapper">
         <a className="logo" href="/">
-        <img src="/dribbble-logo.png" alt="dribbble logo" className="dribbblelogo"></img>
+        <img src="/dribbble-logo.png" alt="dribbble logo" className="dribbble-logo"></img>
         </a>
         <ul className="lists">
           <li><a href="#">Shots</a></li>
@@ -18,7 +18,7 @@ function Header() {
         </ul>
         </div>
       <ul className="lists">
-          <li><a className="profilepicture" href="/">
+          <li><a className="profile-picture-wrapper" href="/">
           <img src="/justine.png" alt="Justine Hill profile" className="profile-picture"/></a></li>
           <li><a href="#"><Mail /></a></li>
           <li><a href="#"><Activity /></a></li>

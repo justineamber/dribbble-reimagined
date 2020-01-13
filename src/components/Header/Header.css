@@ -15,7 +15,7 @@
   display: block;
   margin: 0 auto 16px auto;
 }
-.dribbblelogo {
+.dribbble-logo {
   width: 100%;
   margin-right: 12px;
 }
@@ -34,17 +34,14 @@
   text-decoration: none;
   border-bottom: 1px solid #ccc;
 }
-.profilepicture {
+.profile-picture-wrapper {
   display: block
 }
 .profile-picture {
   width: 25px;
   border-radius: 50%;
 }
-
-/*---------------------------------------------------------------------------------------------------------
-Media Queries
-----------------------------------------------------------------------------------------*/
+/* Media Queries */
 @media (min-width: 769px) {
   .header {
     padding: 16px;
@@ -58,7 +55,7 @@ Media Queries
     display: flex;
     align-items: center;
   }
-  .dribbblelogo {
+  .dribbble-logo {
     width: 100px;
   }
   .logo {
