@@ -1,5 +1,5 @@
 import React from 'react';
-import { Eye, MessageCircle, Heart, } from 'react-feather';
+import { Eye, MessageCircle, Heart, Image, Paperclip, Video  } from 'react-feather';
 import './Content.css';
 
 function Content() {
@@ -16,6 +16,9 @@ function Content() {
           </div>
         </div>
         <div className="card_content">
+          <div className="icon-wrapper">
+            <span className="image-icon"><a href="#"><Image /></a></span>
+          </div>
           <div className="card_info">
             <img src="/afterglow-logo.png" alt="designer logo" className="designer-logo"></img>
             <span className="text--medium">Outsourced<sup className="company-info">PRO</sup></span>
@@ -35,6 +38,9 @@ function Content() {
           </div>
         </div>
         <div className="card_content">
+          <div className="icon-wrapper">
+            <span className="gif-icon">GIF</span>
+          </div>
           <div className="card_info">
             <img src="/afterglow-logo.png" alt="designer logo" className="designer-logo"></img>
             <span className="text--medium">Outsourced<sup className="company-info">PRO</sup></span>
@@ -54,6 +60,9 @@ function Content() {
           </div>
         </div>
         <div className="card_content">
+          <div className="icon-wrapper">
+            <span className="paperclip-icon"><a href="#"><Paperclip /></a></span>
+          </div>
           <div className="card_info">
             <img src="/afterglow-logo.png" alt="designer logo" className="designer-logo"></img>
             <span className="text--medium">Outsourced<sup className="company-info">PRO</sup></span>
@@ -73,6 +82,9 @@ function Content() {
           </div>
         </div>
         <div className="card_content">
+          <div className="icon-wrapper">
+            <span className="video-icon"><a href="#"><Video /></a></span>
+          </div>
           <div className="card_info">
             <img src="/afterglow-logo.png" alt="designer logo" className="designer-logo"></img>
             <span className="text--medium">Outsourced<sup className="company-info">PRO</sup></span>
@@ -92,6 +104,9 @@ function Content() {
           </div>
         </div>
         <div className="card_content">
+          <div className="icon-wrapper">
+            <span className="image-icon"><a href="#"><Image /></a></span>
+          </div>
           <div className="card_info">
             <img src="/afterglow-logo.png" alt="designer logo" className="designer-logo"></img>
             <span className="text--medium">Outsourced<sup className="company-info">PRO</sup></span>
@@ -111,6 +126,9 @@ function Content() {
           </div>
         </div>
         <div className="card_content">
+          <div className="icon-wrapper">
+            <span className="paperclip-icon"><a href="#"><Paperclip /></a></span>
+          </div>
           <div className="card_info">
             <img src="/afterglow-logo.png" alt="designer logo" className="designer-logo"></img>
             <span className="text--medium">Outsourced<sup className="company-info">PRO</sup></span>
@@ -130,6 +148,9 @@ function Content() {
           </div>
         </div>
         <div className="card_content">
+          <div className="icon-wrapper">
+            <span className="image-icon"><a href="#"><Image /></a></span>
+          </div>
           <div className="card_info">
             <img src="/afterglow-logo.png" alt="designer logo" className="designer-logo"></img>
             <span className="text--medium">Outsourced<sup className="company-info">PRO</sup></span>
