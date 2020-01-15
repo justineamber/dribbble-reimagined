@@ -25,17 +25,17 @@
   padding: 0;
 }
 .lists a {
-  display:block;
+  display: block;
   color: #000;
-  font-size: 1.125em;
+  font-size: 1.125rem;
   font-weight: 300;
   text-align: center;
-  padding: .4em;
+  padding: 0.375rem;
   text-decoration: none;
   border-bottom: 0.0625rem solid #ccc;
 }
 .profile-picture-wrapper {
-  display: block
+  display: block;
 }
 .profile-picture {
   width: 1.5625rem;
@@ -62,10 +62,10 @@
     margin: 0;
   }
   .lists {
-   flex-direction: row;
-   justify-content: flex-start;
-   font-size: 0.75rem;
-   align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 0.75rem;
+    align-items: center;
   }
   .lists a {
     border: 0;
