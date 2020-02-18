@@ -4,7 +4,7 @@ import "./Toolbar.css";
 function Toolbar() {
   return (
     <div className="toolbar">
-      <ul className="toolbar-lists">
+      <ul className="toolbar_lists">
         <li>
           <a href="#">Following</a>
         </li>

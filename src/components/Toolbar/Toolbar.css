@@ -5,12 +5,12 @@
   border-bottom: 0;
   padding: 1rem 0;
 }
-.toolbar-lists {
+.toolbar_lists {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.toolbar-lists a {
+.toolbar_lists a {
   display: block;
   color: #000;
   font-size: 1.125rem;
@@ -25,13 +25,13 @@
     padding: 1rem;
     flex-direction: row;
   }
-  .toolbar-lists {
+  .toolbar_lists {
     width: initial;
     flex-direction: row;
     display: flex;
     font-size: 0.75rem;
   }
-  .toolbar-lists a {
+  .toolbar_lists a {
     border: 0;
   }
 }

@@ -1,0 +1,6 @@
+1. Create a card component.
+2. Import the "db" variable from the index.js file into the content.js file.
+3. Use setState() to setup an initial empty "shots" array on the content.js component.
+4. Use the useEffects() hook to get the data from the db variable imported in step 2 and update the state from step 3 with the response from the get request.
+5. Iterate over each item in the state with .map() and return the component created in step 1.
+6. Finally, we will pass our data to the component created in step 1 via props so that it can be rendered accordingly.
