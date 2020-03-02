@@ -3,6 +3,9 @@
 # secrets
 secrets.js
 
+# instructions
+instructions
+
 # dependencies
 /node_modules
 /.pnp

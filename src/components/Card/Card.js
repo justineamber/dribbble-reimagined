@@ -1,13 +1,7 @@
 import React from "react";
-import {
-  Eye,
-  MessageCircle,
-  Heart,
-  Image,
-  Paperclip,
-  Video
-} from "react-feather";
+import { Eye, MessageCircle, Heart } from "react-feather";
 import "./Card.css";
+import { Type } from "../Type/Type";
 
 export const Card = ({ data }) => {
   return (
@@ -20,13 +14,7 @@ export const Card = ({ data }) => {
         </div>
       </div>
       <div className="card_content">
-        <div className="icon_wrapper">
-          <span className="image_icon">
-            <a href="#">
-              <Image />
-            </a>
-          </span>
-        </div>
+        <Type shotType={data.type} />
         <div className="card_info">
           <img
             src="/afterglow_logo.png"

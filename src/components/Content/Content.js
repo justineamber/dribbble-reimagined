@@ -4,23 +4,23 @@ import { Card } from "../Card/Card";
 import { db } from "../../index";
 
 function Content() {
-  const [shots, setShots] = useState();
+  const [snapshots, setSnapshots] = useState();
 
   useEffect(() => {
     db.collection("shots")
       .get()
       .then(querySnapshot => {
-        const allData = [];
-
+        const tempArray = [];
         querySnapshot.forEach(doc => {
-          const dataWithId = {
+          const newData = {
             id: doc.id,
             ...doc.data()
           };
-          allData.push(dataWithId);
+
+          return tempArray.push(newData);
         });
 
-        setShots(allData);
+        setSnapshots(tempArray);
       })
       .catch(error => {
         console.error(error);
@@ -30,10 +30,8 @@ function Content() {
   return (
     <main>
       <section className="cards">
-        {shots &&
-          shots.map(shot => {
-            return <Card data={shot} key={shot.id} />;
-          })}
+        {snapshots &&
+          snapshots.map(snapshot => <Card data={snapshot} key={snapshot.id} />)}
       </section>
     </main>
   );

@@ -80,18 +80,7 @@ a.save-button:active {
 .card_content {
   padding: 0.625rem;
 }
-.icon_wrapper {
-  display: flex;
-  padding: 0.0625rem;
-  justify-content: center;
-  text-align: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  border: 0.125rem solid #7342a5;
-  font-size: 0.75rem;
-  font-weight: 700;
-  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-}
+
 .card_info {
   display: flex;
   align-self: end;
