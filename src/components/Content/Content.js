@@ -3,24 +3,38 @@ import "./Content.css";
 import { Card } from "../Card/Card";
 import { db } from "../../index";
 
-function Content() {
+const Content = () => {
   const [snapshots, setSnapshots] = useState();
+  const [authors, setAuthors] = useState();
 
   useEffect(() => {
     db.collection("shots")
       .get()
       .then(querySnapshot => {
         const tempArray = [];
-        querySnapshot.forEach(doc => {
-          const newData = {
+        querySnapshot.forEach(doc =>
+          tempArray.push({
             id: doc.id,
             ...doc.data()
-          };
-
-          return tempArray.push(newData);
-        });
-
+          })
+        );
         setSnapshots(tempArray);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+
+    db.collection("shot_author")
+      .get()
+      .then(querySnapshot => {
+        const tempArray = [];
+        querySnapshot.forEach(doc =>
+          tempArray.push({
+            id: doc.id,
+            ...doc.data()
+          })
+        );
+        setAuthors(tempArray);
       })
       .catch(error => {
         console.error(error);
@@ -31,10 +45,19 @@ function Content() {
     <main>
       <section className="cards">
         {snapshots &&
-          snapshots.map(snapshot => <Card data={snapshot} key={snapshot.id} />)}
+          authors &&
+          snapshots.map(snapshot => (
+            <Card
+              data={snapshot}
+              author={authors.find(author => {
+                return author.id === snapshot.author;
+              })}
+              key={snapshot.id}
+            />
+          ))}
       </section>
     </main>
   );
-}
+};
 
 export default Content;

@@ -91,7 +91,6 @@ a.save-button:active {
   width: 1.5625rem;
   height: 1.5625rem;
   border-radius: 50%;
-  align-self: flex-end;
   padding: 0.125rem;
 }
 .text_medium {
@@ -113,6 +112,11 @@ a.save-button:active {
 }
 /* Media Queries */
 @media only screen and (max-width: 62.5rem) {
+  .card {
+    grid-column-end: span 6;
+  }
+}
+@media only screen and (max-width: 64rem) {
   .card {
     grid-column-end: span 6;
   }

@@ -1,9 +1,11 @@
 import React from "react";
 import { Eye, MessageCircle, Heart } from "react-feather";
 import "./Card.css";
-import { Type } from "../Type/Type";
+import Type from "../Type/Type";
 
-export const Card = ({ data }) => {
+export const Card = props => {
+  const { data, author } = props;
+
   return (
     <div className="card">
       <div className="card_image_container">
@@ -17,12 +19,12 @@ export const Card = ({ data }) => {
         <Type shotType={data.type} />
         <div className="card_info">
           <img
-            src="/afterglow_logo.png"
+            src={author.logo}
             alt="designer logo"
             className="designer_logo"
           />
           <span className="text_medium">
-            {data.author}
+            {author.name}
             <sup className="company_info">PRO</sup>
           </span>
           <a href="#" className="card_engagement text_medium">

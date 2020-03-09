@@ -2,7 +2,7 @@ import React from "react";
 import { Image, Video, Film, HelpCircle } from "react-feather";
 import "./Type.css";
 
-export const Type = props => {
+const Type = props => {
   const shotType = props.shotType;
 
   const handleShotTypeIcon = () => {
@@ -25,3 +25,5 @@ export const Type = props => {
     </div>
   );
 };
+
+export default Type;
