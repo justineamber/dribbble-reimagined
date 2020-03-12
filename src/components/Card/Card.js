@@ -1,7 +1,8 @@
 import React from "react";
-import { Eye, MessageCircle, Heart } from "react-feather";
+import { Eye, MessageCircle } from "react-feather";
 import "./Card.css";
 import Type from "../Type/Type";
+import LikesButton from "../LikesButton/LikesButton";
 
 export const Card = props => {
   const { data, author } = props;
@@ -35,10 +36,7 @@ export const Card = props => {
             <MessageCircle />
             <span>{data.comments.length}</span>
           </a>
-          <a href="#" className="card_engagement text_medium">
-            <Heart />
-            <span>{data.likes}</span>
-          </a>
+          <LikesButton shotLike={data.likes} shotId={data.id} />
         </div>
       </div>
     </div>
