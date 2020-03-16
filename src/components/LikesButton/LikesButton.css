@@ -1,6 +1,13 @@
+.text_medium {
+  font-weight: 700;
+}
+
 .card_engagement {
   margin-left: auto;
   width: 1.6875rem;
   justify-content: center;
   text-align: center;
+  padding: 0;
+  background: none;
+  border: 0;
 }

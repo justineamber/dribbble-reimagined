@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { Heart } from "react-feather";
 import { db } from "../../index";
 import "./LikesButton.css";
 
 export const LikesButton = props => {
-  const shotLike = props.shotLike;
+  const { shotLike, getData } = props;
 
   const handleShotLike = () => {
     const newLikes = db.collection("shots").doc(props.shotId);
@@ -13,6 +13,7 @@ export const LikesButton = props => {
         likes: shotLike + 1
       })
       .then(() => {
+        getData();
         console.log("Document successfully updated!");
       })
       .catch(error => {
@@ -27,6 +28,7 @@ export const LikesButton = props => {
     >
       <Heart />
       {shotLike}
+      {}
     </button>
   );
 };

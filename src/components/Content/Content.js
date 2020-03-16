@@ -7,7 +7,7 @@ const Content = () => {
   const [snapshots, setSnapshots] = useState();
   const [authors, setAuthors] = useState();
 
-  useEffect(() => {
+  const getData = () => {
     db.collection("shots")
       .get()
       .then(querySnapshot => {
@@ -23,7 +23,9 @@ const Content = () => {
       .catch(error => {
         console.error(error);
       });
-
+  };
+  useEffect(() => {
+    getData();
     db.collection("shot_author")
       .get()
       .then(querySnapshot => {
@@ -48,6 +50,7 @@ const Content = () => {
           authors &&
           snapshots.map(snapshot => (
             <Card
+              getData={getData}
               data={snapshot}
               author={authors.find(author => {
                 return author.id === snapshot.author;

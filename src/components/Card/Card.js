@@ -5,7 +5,7 @@ import Type from "../Type/Type";
 import LikesButton from "../LikesButton/LikesButton";
 
 export const Card = props => {
-  const { data, author } = props;
+  const { author, data, getData } = props;
 
   return (
     <div className="card">
@@ -36,7 +36,11 @@ export const Card = props => {
             <MessageCircle />
             <span>{data.comments.length}</span>
           </a>
-          <LikesButton shotLike={data.likes} shotId={data.id} />
+          <LikesButton
+            shotLike={data.likes}
+            shotId={data.id}
+            getData={getData}
+          />
         </div>
       </div>
     </div>
