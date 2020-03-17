@@ -7,7 +7,8 @@ const Content = () => {
   const [snapshots, setSnapshots] = useState();
   const [authors, setAuthors] = useState();
 
-  const getData = () => {
+  const GetData = () => {
+    //anonymous arrow function called getData.
     db.collection("shots")
       .get()
       .then(querySnapshot => {
@@ -25,7 +26,7 @@ const Content = () => {
       });
   };
   useEffect(() => {
-    getData();
+    GetData(); //Call getData within useEffect
     db.collection("shot_author")
       .get()
       .then(querySnapshot => {
@@ -50,7 +51,7 @@ const Content = () => {
           authors &&
           snapshots.map(snapshot => (
             <Card
-              getData={getData}
+              getData={GetData} //pass as prop
               data={snapshot}
               author={authors.find(author => {
                 return author.id === snapshot.author;
